@@ -1,0 +1,270 @@
+.nav {
+  background-color: #2874f0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.menu_nav_icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+#logo a {
+  font-size: 10px;
+  font-family: cursive;
+  color: white;
+}
+
+.logo2_text {
+  color: yellow;
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.search {
+  width: 28rem;
+  height: 2.2rem;
+}
+
+#search-icon {
+  display: none;
+
+}
+
+#mic-icon {
+  display: none;
+}
+
+#camera-icon {
+  display: none;
+}
+
+#searchBar {
+  display: flex;
+  flex-direction: row;
+}
+
+#login_button button {
+  width: 7rem;
+  height: 2rem;
+  border: none;
+  background-color: white;
+  color: blue;
+  font-weight: 600;
+}
+
+#login_button {
+  font-weight: 550;
+  padding: 0px 15px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+  position: relative;
+}
+
+#login_button:hover .more_menu {
+  display: block;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: white;
+
+}
+
+
+/***more ****/
+.more_link {
+  font-weight: 550;
+  padding: 0px 15px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  margin: 0 10px;
+  position: relative;
+}
+
+.icon_more {
+  font-size: 10px;
+  transition: transform 0.5s;
+}
+
+.more_link:hover .icon_more {
+  transform: rotate(-180deg);
+}
+
+.more_menu {
+  position: absolute;
+  height: 260px;
+  width: 200px;
+  content: "";
+  background-color: transparent;
+  transform: translateX(-35%);
+  padding-top: 10px;
+  display: none;
+  z-index: 12;
+
+}
+
+.more_link:hover .more_menu {
+  display: block;
+}
+
+.more_menu::before {
+  position: absolute;
+  content: "";
+  margin-left: 95px;
+  top: 1px;
+  border-top: 0px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid white;
+}
+
+.more_menu_list {
+  background-color: white;
+  height: 100%;
+  box-shadow: -5px -0px 5px rgba(0, 0, 0, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.more_menu_list a {
+  display: flex;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 0.2px solid rgb(173, 171, 171);
+}
+
+.more_menu_list i {
+  color: #2874f0;
+}
+
+.more_menu_list p {
+  color: #474545;
+  padding-left: 10px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.card_link {
+  display: flex;
+  font-size: 15px;
+  font-weight: 550;
+  color: white;
+  margin-left: 10px;
+}
+
+.card_link p {
+  padding: 0px 5px;
+
+}
+
+@media (min-width:0px) and (max-width:480px) {
+
+  #logo {
+    display: none;
+  }
+
+  #login_button {
+    display: none;
+  }
+
+  .card_link p {
+    display: none;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .more_link {
+    display: none;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  #search-icon {
+    display: block;
+    color: black;
+    margin-left: -15px;
+
+  }
+
+  #mic-icon {
+    display: block;
+    margin-left: 2rem;
+    color: white;
+  }
+
+  #camera-icon {
+    display: block;
+    margin-left: 2rem;
+    color: white;
+
+  }
+
+
+  #cart-icon {
+    /* color: black; */
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width:481px) and (max-width:767px) {
+  .search {
+    width: 100%;
+  }
+
+  #login_button {
+    display: none;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  #search-icon {
+    display: block;
+    color: black;
+    margin-left: -15px;
+
+  }
+
+  .more_link {
+    display: none;
+  }
+}
+
+@media (min-width:767px) and (max-width:1024px) {
+  .search {
+    width: 100%;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+}
+
+@media (min-width:1024px) and (max-width:1280px) {
+  .search {
+    width: 100%;
+  }
+}

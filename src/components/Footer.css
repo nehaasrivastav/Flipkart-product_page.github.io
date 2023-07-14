@@ -1,0 +1,23 @@
+.site-footer{
+    background-color:#212121;
+   color: white; 
+}
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.site-footer i{
+    color: yellow;
+}
+h6{
+    color: #878787;
+    font-size: 14px;
+}
+a span p{
+    font-size: 9px;
+}
